@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Menu</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+<div id="header-container"></div>
+
+
+<!-- Menu Section -->
+<section class="menu">
+    <!-- Repeat for 20 items -->
+    <div  class="menu-item">
+       
+
+        <a href="tea.html">
+        <img src="image/startmenu/tea.jpg"  alt="Go to another page">
+        </a>
+        <h3>Tea</h3>
+        <p>Refreshing antioxidant-rich tea.</p>
+        
+    </div>
+
+    <!-- Coffee -->
+
+    <div class="menu-item">
+        <a href="">
+        <img src="image/startmenu/coffee.jpg" alt="Go to another page">
+        </a>
+        <h3>Coffee</h3>
+        <p>Strong and bold tea for energy.</p>
+
+        <script>
+        document.getElementById("clickImage").addEventListener("click", function() {
+            window.location.href = "tea.html"; 
+        });
+    </script>
+        
+    </div>
+
+    <!-- juce -->
+    <div class="menu-item">
+        <a href="">
+        <img src="image/startmenu/juce.jpg" alt="Go to another page">
+        </a>
+        <h3>Fresh Made</h3>
+        <p>Rich and concentrated</p>
+        
+    </div>
+
+
+    <!-- smoothy -->
+    <div class="menu-item">
+         <a href="">
+        <img src="image/startmenu/smoothy.jpg"  alt="Go to another page">
+        </a>
+        <h3>Smoothy</h3>
+        <p>Creamy with frothy milk</p>
+        
+    </div>
+
+    <!-- ice cream -->
+    <div class="menu-item">
+         <a href="">
+        <img src="image/startmenu/ice cream.jpg" alt="Go to another page">
+        </a>
+        <h3>Ice cream</h3>
+        <p>Cool & refreshing </p>
+        
+    </div>
+
+    <!-- Cake -->
+
+    <div class="menu-item">
+         <a href="">
+        <img src="image/startmenu/cake.jpg" alt="Go to another page">
+        </a>
+        <h3>Cake</h3>
+        <p>Sweet and creamy</p>
+        
+    </div>
+
+    <!-- Pizza -->
+    <div class="menu-item">
+         <a href="">
+        <img src="image/startmenu/pizza.jpg" alt="Go to another page">
+        </a>
+        
+        <h3>Margherita Pizza</h3>
+        <p>Classic cheese and tomato pizza.</p>
+        
+    </div>
+
+    <!-- burger -->
+
+    <div class="menu-item">
+          <a href="">
+        <img src="image/startmenu/burger.jpg" alt="Go to another page">
+        </a>
+        <h3>Burger</h3>
+        <p>Spicy pepperoni with mozzarella</p>
+        
+    </div>
+
+    <!-- fries -->
+    <div class="menu-item">
+      <a href="">
+        <img src="image/startmenu/fries.jpg" alt="Go to another page">
+        </a>       
+         <h3>Fries</h3>
+        <p>Its really Hot</p>
+        
+    </div>
+
+    <!-- momo -->
+
+    <div class="menu-item">
+          <a href="">
+        <img src="image/startmenu/momo.jpg" alt="Go to another page">
+        </a>
+        <h3>Momos</h3>
+        <p>Healthy with fresh veggies</p>
+        
+    </div>
+
+    <!--bread -->
+    <div class="menu-item">
+          <a href="">
+        <img src="image/startmenu/bread.jpg" alt="Go to another page">
+        </a>
+        <h3>Bread </h3>
+        <p>Rich and moist</p>
+        
+    </div>
+
+
+    <!-- sandwich -->
+    <div class="menu-item">
+          <a href="">
+        <img src="image/startmenu/san.jpg" alt="Go to another page">
+        </a>
+        <h3>Sandwich</h3>
+        <p>sliees are enough?</p>
+        
+    </div>
+
+    <!-- Waffles -->
+    <div class="menu-item">
+          <a href="">
+        <img src="image/startmenu/waffles.jpg" alt="Go to another page">
+        </a>
+        <h3>Waffles</h3>
+        <p>its creamey inside</p>
+        
+    </div>
+
+    <!-- Pancake-->
+
+    <div class="menu-item">
+          <a href="">
+        <img src="image/startmenu/pancake.jpg" alt="Go to another page">
+        </a>
+        <h3>Pan-Cake</h3>
+        <p>Melted inside</p>
+        
+    </div>
+
+    <!--cupcake -->
+    <div class="menu-item">
+          <a href="">
+        <img src="image/startmenu/cupcake.jpg" alt="Go to another page">
+        </a>
+        <h3>   Cup-Cake</h3>
+        <p>Triple-layer creamey</p>
+        
+    </div>
+
+
+    <!-- Pasta -->
+    <div class="menu-item">
+          <a href="">
+        <img src="image/startmenu/pasta.jpg" alt="Go to another page">
+        </a>
+        <h3>Pasta</h3>
+        <p>heyyy Cheesy</p>
+        
+    </div>
+
+    <!-- Maggi-->
+    <div class="menu-item">
+          <a href="">
+        <img src="image/startmenu/maggi.jpg" alt="Go to another page">
+        </a>
+        <h3>Maggi</h3>
+        <p>Italian reamy sauce</p>
+        
+    </div>
+
+    <!-- Chocolate -->
+
+    <div class="menu-item">
+          <a href="">
+        <img src="image/startmenu/choclate.jpg" alt="Go to another page">
+        </a>
+        <h3>Chocolate</h3>
+        <p>its melts in you!!</p>
+        
+    </div>
+</section>
+
+
+<script>
+
+      fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header-container").innerHTML = data;
+        });
+
+</script>
+
+<!-- Back Button -->
+<div class="back-container">
+    <button class="back-btn" onclick="history.back()">← Back</button>
+</div>
+
+</body>
+</html>

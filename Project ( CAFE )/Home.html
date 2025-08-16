@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vintage Cafe</title>
+  <link rel="stylesheet" href="home.css"/>
+</head>
+<body>
+  <header>
+    <!--<nav class="navbar">
+      <div class="logo">☕ Vintage Cafe</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul> 
+    </nav> -->
+
+    <div id="header-container"></div>
+    <div class="hero">
+      <h1 >Welcome to our cafe</h1>
+      <p>Where every sip tells a story</p>
+      <button class="btn" id="nextBtn">view more</button>
+      
+    </div>
+  </header>
+
+  
+</body>
+
+<script>
+        document.getElementById("nextBtn").addEventListener("click", function() {
+            window.location.href = "menu.html";
+        });
+
+
+
+         fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header-container").innerHTML = data;
+        });
+
+
+    </script>
+
+
+</html>
